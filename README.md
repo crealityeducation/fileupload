@@ -16,4 +16,4 @@ node index.js
 
 ##### LICENSE
 
-MIT - Copyright (c) 2022 Surya T
+MIT - Copyright (c) 2022 Creality Education
