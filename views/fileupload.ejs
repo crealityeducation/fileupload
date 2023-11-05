@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>FileUpload</title>
+  <%- include('./partials/head') %>
+</head>
+
+<body>
+  <%- include('./partials/header') %>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 mb-2 mt-2">
+          <form ref='uploadForm' id='uploadForm' method="POST" action="/upload/" enctype="multipart/form-data">
+            <div class="row">
+              <div class="input-group mb-3">
+                <input class="form-control form-control-sm" type="file" id="the_file" name="sampleFile"
+                  required="required" multiple placeholder="Upload File" aria-label="Upload File"
+                  aria-describedby="button-addon-upload" />
+                <button class="btn btn-success btn-sm" type="submit" id="button-addon-upload">
+                  Upload
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-5 mb-2 mt-2">
+          <form method="GET" action="/download">
+            <div class="row">
+              <div class="input-group mb-3">
+                <input type="text" id="filename" name="filename" required="required"
+                  class="form-control form-control-sm" placeholder="Enter Filename with Ext"
+                  aria-label="Enter Filename with Ext" aria-describedby="button-addon-download" />
+                <button class="btn btn-success btn-sm" type="submit" id="button-addon-download">
+                  Download
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include('./partials/footer') %>
+      <script src="../js/fileupload.js"></script>
+</body>
+
+</html>
