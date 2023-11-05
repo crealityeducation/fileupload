@@ -3,7 +3,7 @@
 ##### FEATURES
 
 - Upload files to server :white_check_mark:
-- dwonload files from server :white_check_mark:
+- Dwonload files from server :white_check_mark:
 
 ##### USAGE
 
